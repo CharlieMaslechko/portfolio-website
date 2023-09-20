@@ -1,0 +1,9 @@
+.night-sky-style {
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.night-sky-style-fade {
+    opacity: 0;
+    transition: all 1s ease;
+}

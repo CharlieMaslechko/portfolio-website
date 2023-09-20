@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.nav-container-dark {
+  justify-content: space-between;
+  font: 20px Raleway;
+  display: flex;
+  color: white;
+  padding: 10px;
+  align-items: center;
+  background: linear-gradient(#445e8f, #03020a);
+  transition: all 2s ease;
+}
+
+.nav-container-light {
+  justify-content: space-between;
+  font: 20px Raleway;
+  display: flex;
+  color: black;
+  padding: 10px;
+  align-items: center;
+  background: linear-gradient(white, rgb(169, 222, 243));
+  transition: all 2s ease;
+}
+
+.no-underline {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-container{
+  text-align: center;
+  cursor: pointer;
+}
+
+.logo-subheading{
+  font-size: 10px;
+}
+
+.logo-heading{
+  font-style: bold;
+}
+
+.links-container {
+  font-family: Raleway;
+  display: flex;  
+} 
+
+.links-container a {
+    font: 15px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.links-container a:hover {
+  opacity: 0.5;
+  transition: all 2s;
+}
+
+.brackets a:before, .brackets a:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 28px;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+.brackets a:before
+{
+    content: '(';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+.brackets a:after
+{
+    content: ')';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+.brackets a:hover:before,  a:hover:after
+{
+    opacity: 0.5;
+    transform: translateX(0px);
+}

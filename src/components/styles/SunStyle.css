@@ -1,0 +1,178 @@
+
+.sun-holder-day{
+    position: absolute;
+    transform: translate(200px, 60px);
+    transition: transform  5s ease;
+    z-index: 1;
+}
+.sun-holder-night{
+    position: absolute;
+    transform: translate(80px, 500px);
+    width: 60px;
+    height: 60px;
+    transition: transform 5s ease;
+    z-index: 1;
+}
+.sun {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 40px 15px rgb(241, 247, 202);  
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.ray-box{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    animation: ray-rotation 40s linear infinite;
+}
+
+.ray1 {
+    position: absolute;
+    height: 100px;
+    width: 20px;
+    top: 100%;
+    left: calc(50% - 10px);
+    background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+    opacity: 0.1;
+    z-index: 1;
+    animation: ray-animation-height 7s ease-in-out infinite;
+}
+
+
+.ray2 {
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    top:  calc(50% - 10px);
+    right: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);    
+    opacity: 0.1;
+    z-index: 1;
+    animation: ray-animation-width 5s ease-in-out infinite;
+}
+
+.ray3 {
+    position: absolute;
+    height: 100px;
+    width: 20px;
+    bottom: 100%;
+    left: calc(50% - 10px);
+    background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);    
+    opacity: 0.1;
+    z-index: 1;
+    animation: ray-animation-height 4s ease-in-out infinite;
+    animation-delay: 1s
+}
+
+
+.ray4 {
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    top: calc(50% - 10px);
+    left: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+    opacity: 0.1;
+    z-index: 1;
+    animation: ray-animation-width 4s ease-in-out infinite;
+    animation-delay: 1s
+}
+
+
+.ray5 {
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    top: calc(50% - 10px);
+    left: 100%;
+    transform: translateY(20px);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);    opacity: 0.1;
+    rotate: 45deg;
+    transform-origin: 0% 50%;
+    z-index: 1;
+    animation: ray-animation-width 8s ease-in-out infinite;
+    animation-delay: 2s
+}
+
+.ray6 {
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    top: calc(50% - 10px);
+    left: 100%;
+    transform: translateY(-20px);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);    opacity: 0.1;;
+    rotate: -45deg;
+    transform-origin: 0% 50%;
+    z-index: 1;
+    animation: ray-animation-width 4s ease-in-out infinite;
+    animation-delay: 1s
+}
+
+.ray7 {
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    top:  calc(50% - 10px);
+    right: 100%;
+    transform: translateY(20px);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);    opacity: 0.1;
+    rotate: -45deg;
+    transform-origin: 100% 50%;
+    z-index: 1;
+    animation: ray-animation-width 5s ease-in-out infinite;
+    animation-delay: 2s
+}
+
+.ray8 {
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    top:  calc(50% - 10px);
+    right: 100%;
+    transform: translateY(-20px);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);    opacity: 0.1;
+    rotate: 45deg;
+    transform-origin: 100% 50%;
+    z-index: 1;
+    animation: ray-animation-width 6s ease-in-out infinite;
+    animation-delay: 5s
+}
+
+@keyframes ray-animation-width {
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 25px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+@keyframes ray-animation-height {
+    0%{
+        height: 100px;
+    }
+    50%{
+        height: 25px;
+    }
+    100%{
+        height: 100px;
+    }
+}
+@keyframes ray-rotation {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}

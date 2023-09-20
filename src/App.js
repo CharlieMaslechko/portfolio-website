@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import { DarkLightModeContextProvider } from './DarkLightContext';
+
+import { HomePage } from "./components/HomePage"
+import { AboutMePage } from './components/AboutMePage';
+import { AthleticsPage } from './components/AthleticsPage';
+import { NavBar } from './components/NavBar';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DarkLightModeContextProvider>
+      <Router>
+        <div>
+          <NavBar /> {/* Display the NavBar component */}
+          <Routes>
+            <Route path="/" element={<HomePage/>} /> {/* Route to the HomePage component */}
+            <Route path="/about" element={<AboutMePage/>} /> {/* Route to the AboutMePage component */}
+            <Route path="/athletics" element={<AthleticsPage/>} /> {/* Route to the AthleticsPage component */}
+          </Routes>
+        </div>
+      </Router>
+    </DarkLightModeContextProvider>
   );
 }
 

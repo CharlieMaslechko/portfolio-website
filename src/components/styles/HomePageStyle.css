@@ -1,0 +1,46 @@
+
+.hero-div{
+    display: flex;
+    justify-content: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 3;
+  }
+  .sky {
+    background-color: rgb(169, 222, 243);
+  }
+  .glow-div {
+    width: 100vw;
+    position: absolute;
+    top: 580px;
+    box-shadow: 0 0 400px 150px #445e8f;
+    z-index: 1;
+    animation: glow 5s ease-in-out infinite;
+  }
+  
+  .mountain-background {
+    width: 100vw;
+    height: 100vh;
+    top: 30%;
+    position: absolute;
+    max-width: 100%;
+    display: block;
+    object-fit:cover;
+    z-index: 3;
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 400px 125px #445e8f;
+    }
+    50%{
+      box-shadow: 0 0 400px 175px #445e8f;
+    }
+    100%{
+      box-shadow: 0 0 400px 125px #445e8f;
+    }
+  }
+  
+  

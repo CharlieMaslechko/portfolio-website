@@ -1,0 +1,33 @@
+
+.banner-text-box-dark {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  font-size: 4vmax;
+  font-weight: 500;
+  color: white;
+  align-items: center;
+  text-align: center;
+  transition: color 2s ease;
+}
+
+.banner-text-box-light {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  font-size: 4vmax;
+  font-weight: 500;
+  color: grey;
+  align-items: center;
+  text-align: center;
+  transition: color 2s ease;
+}
+
+.cursor-blinking{
+  animation: cursorAnimation 1s linear infinite;
+}
+
+@keyframes cursorAnimation {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
