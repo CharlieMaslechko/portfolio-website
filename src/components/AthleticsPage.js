@@ -1,5 +1,6 @@
 import React from "react"
 import "./styles/AthleticsPageStyle.css"
+import { AthleticComponent } from "./AthleticComponent"
 
 export const AthleticsPage = () => {
 
@@ -77,6 +78,7 @@ export const AthleticsPage = () => {
                     <h1>Distance Swam</h1>
                     <h2>{swimDistance}</h2>
                 </div>
+                <AthleticComponent sport="swimming" color="blue"/>
             </div>
         </div>
     )
