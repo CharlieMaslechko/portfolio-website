@@ -1,19 +1,30 @@
-.project-container {
+.project-container-show {
     display: flex;
     flex-direction: column;
     background: rgb(39,39,39);
-    margin: 30px 60px;
+    margin: 0px 60px 30px 60px;
     opacity: 1;
-    transition: opacity 1s ease-in-out;
+    transition: all 1s ease;
     border-radius: 20px ;
     color: white;
     cursor: pointer;
 }
 
+.project-container-hide {
+    display: flex;
+    flex-direction: column;
+    background: rgb(39,39,39);
+    margin: 0px 60px 30px 60px;
+    opacity: 0;
+    transition: all 1s ease;
+    border-radius: 20px ;
+    color: white;
+}
 
-.project-container:hover {
+
+.project-container-show:hover {
     opacity: 0.5;
-    transition: opacity 1s ease-in-out;
+    transition: all 1s ease;
 }
 
 p {

@@ -6,9 +6,8 @@ import ProfilePhoto from "../images/ProfilePhoto.png"
 
 export const AboutMePage = () => {
     return (
-        <div>
+        <div>444444444
             <div class="background">
-                <NightSkyCanvas/>
             </div>
             <div class="forground">
                 <h1> About me </h1>

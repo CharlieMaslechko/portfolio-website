@@ -95,7 +95,8 @@
   cursor: pointer;
   position: absolute;
   height: 20px;
-  width: 30px;
+  width: 40px;
+  display: block;
 }
 
 .line1, .line2, .line3{
@@ -105,6 +106,7 @@
   border-radius: 10px;
   opacity: 1;
   transition: all ease-in-out 1s;
+  cursor: pointer;
 }
 
 input:checked ~ #l2 {
@@ -123,6 +125,8 @@ input:checked ~ #l3 {
   transform: translateY(-12px);
   transition: all ease-in-out 1s;
 }
+
+
 
 
 .hamburger-lines-holder{
